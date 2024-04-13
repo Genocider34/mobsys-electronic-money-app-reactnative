@@ -1,11 +1,4 @@
-import {
-  Image,
-  Pressable,
-  StyleSheet,
-  Text,
-  TextInput,
-  View,
-} from "react-native";
+import { Image, StyleSheet, View } from "react-native";
 import COLOR from "../constants/COLOR";
 import WhiteText from "../components/WhiteText";
 import WhiteTextBold from "../components/WhiteTextBold";

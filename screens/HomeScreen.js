@@ -1,4 +1,4 @@
-import { View, Text, StyleSheet, Image } from "react-native";
+import { View, StyleSheet } from "react-native";
 import WhiteText from "../components/WhiteText";
 import COLOR from "../constants/COLOR";
 import WhiteTextBold from "../components/WhiteTextBold";
@@ -11,7 +11,7 @@ export default function HomeScreen() {
     <View style={styles.container}>
       <View style={styles.balanceContainer}>
         <WhiteText style={styles.balanceText}>Your Balance</WhiteText>
-        <WhiteTextBold style={styles.balanceAmountText}>$5,000</WhiteTextBold>
+        <WhiteTextBold style={styles.balanceAmountText}>₱69,420</WhiteTextBold>
       </View>
       <View>
         <PrimaryButton>Request</PrimaryButton>
@@ -52,11 +52,9 @@ const styles = StyleSheet.create({
   },
   balanceText: {
     fontSize: 24,
-    color: "black",
   },
   balanceAmountText: {
     fontSize: 40,
-    color: "black",
   },
   transText: {
     fontSize: 24,

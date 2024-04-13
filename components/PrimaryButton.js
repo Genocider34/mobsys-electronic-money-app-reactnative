@@ -41,7 +41,7 @@ const styles = StyleSheet.create({
     elevation: 2,
   },
   buttonText: {
-    color: COLOR.spiralDark,
+    color: "white",
     textAlign: "center",
     fontFamily: "Poppins-Regular",
   },

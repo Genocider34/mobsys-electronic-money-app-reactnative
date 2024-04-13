@@ -6,35 +6,40 @@ import { withDecay } from "react-native-reanimated";
 export default function ItemList({ img, title, date, amount }) {
   return (
     <View style={styles.container}>
-      <Image style={styles.image} source={img} />
+      <View style={styles.imageContainer}>
+        <Image style={styles.image} source={img} />
+      </View>
       <View style={styles.titleContainer}>
         <WhiteTextBold>{title}</WhiteTextBold>
         <WhiteText>{date}</WhiteText>
-        <View style={styles.amountContainer}>
-          <WhiteTextBold>${amount}</WhiteTextBold>
-        </View>
       </View>
+      <WhiteTextBold>₱{amount}</WhiteTextBold>
     </View>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
+    backgroundColor: COLOR.sprialLightDark,
+    flex: 1,
+    flexDirection: "row",
     alignItems: "center",
     marginVertical: 6,
-    borderWidth: 1,
-    borderColor: COLOR.greenGrey,
+    borderColor: "white",
     borderRadius: 10,
-    padding: 6,
-    flexDirection: "row",
+    padding: 8,
   },
-  image: {
+  imageContainer: {
     width: 50,
     height: 50,
   },
-  amountContainer: {},
+  image: {
+    width: "100%",
+    height: "100%",
+  },
   titleContainer: {
-    justifyContent: "space-between",
-    flexDirection: "column",
+    flex: 1,
+    justifyContent: "center",
+    marginLeft: 10,
   },
 });
