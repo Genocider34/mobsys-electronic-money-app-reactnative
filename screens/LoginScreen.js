@@ -35,7 +35,9 @@ export default function LoginScreen() {
       </View>
       <PrimaryButton style={styles.button}>Sign in</PrimaryButton>
 
-      <WhiteText>───────── Or continue with ─────────</WhiteText>
+      <WhiteText style={styles.textContinue}>
+        ───────── Or continue with ─────────
+      </WhiteText>
 
       <View style={styles.imagesContainer}>
         <Icon source={require("../assets/images/gg.png")} />
@@ -67,6 +69,7 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     justifyContent: "center",
     alignItems: "center",
+    marginTop: 24,
   },
   signText: {
     fontSize: 24,
@@ -102,5 +105,10 @@ const styles = StyleSheet.create({
   },
   imagesContainer: {
     flexDirection: "row",
+    marginBottom: 36,
+  },
+  textContinue: {
+    marginTop: 36,
+    marginBottom: 15,
   },
 });
